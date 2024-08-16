@@ -1,0 +1,118 @@
+/* Lastpage.css */
+
+.last-page {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+}
+
+.search-bar {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.search-bar input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 300px;
+  transition: border-color 0.3s;
+}
+
+.search-bar input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.search-bar button {
+  padding: 10px 20px;
+  margin-left: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.search-bar button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.submitted-view {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.submitted-view h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.view-item {
+  border-bottom: 1px solid #ddd;
+  padding: 15px 0;
+  transition: background-color 0.3s;
+}
+
+.view-item:last-child {
+  border-bottom: none;
+}
+
+.view-item:hover {
+  background-color: #f1f1f1;
+}
+
+.view-item p {
+  margin: 0;
+  font-size: 16px;
+  color: #555;
+}
+
+.view-item img {
+  border-radius: 4px;
+  margin-top: 10px;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .search-bar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .search-bar input {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 10px;
+  }
+
+  .search-bar button {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .submitted-view {
+    padding: 15px;
+  }
+
+  .view-item {
+    padding: 10px 0;
+  }
+
+  .view-item img {
+    width: 100%;
+    height: auto;
+  }
+}
